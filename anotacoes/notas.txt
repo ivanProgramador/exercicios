@@ -1,0 +1,2 @@
+Uma função criada dentro da pasta pages é interpretada como um página pelo Next então ela pode ser acessada 
+diretamente na url principal do aplicativo sem a necessidade de referencia no arquivo index.  
