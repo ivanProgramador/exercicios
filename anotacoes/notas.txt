@@ -17,6 +17,15 @@ Produtividade
 Criar so arquivos de componentes usando a extenção jsx faz com que o vscode auxilie usando o auto complete na hora de  
 construir um componente. 
 
+Dentro da pasta pages eu criei um diretório "/basicos" e todos os compomentes dentro dele tem o nome minusculo porque 
+esses composnetes serão acessados atráves de uma url, como foi dito antes os componentes dessa pasta podem ser acessados de 
+forma direta pelo navegador, para que eu crie componentes de fato eles devem ser criados dentro da pasta Components.
+
+Se foram criados dentro da pasta pages vão funcionar normalmente porém a estrutura do projeto ficará confusa, os componentes
+devem ter a primenra letra do nome em caixa alta por convenção.
+
+
+
 
 
 
