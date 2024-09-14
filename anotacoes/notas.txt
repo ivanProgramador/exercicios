@@ -12,6 +12,12 @@ que nos componentes que eu estou fazendo não existe a linha.
 
 import React from 'React';
 
+Produtividade 
+
+Criar so arquivos de componentes usando a extenção jsx faz com que o vscode auxilie usando o auto complete na hora de  
+construir um componente. 
+
+
 
 
 
