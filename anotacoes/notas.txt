@@ -1,2 +1,9 @@
 Uma função criada dentro da pasta pages é interpretada como um página pelo Next então ela pode ser acessada 
-diretamente na url principal do aplicativo sem a necessidade de referencia no arquivo index.  
+diretamente na url principal do aplicativo sem a necessidade de referencia no arquivo index.
+
+Nessa aula foi alterada a localização do compomenet primieero para de ntro da pasta basicos então nesse caso 
+eu não posso mais acessar ela diretamente eu tenho que digitar na url o nome da pasta onde o componete está para 
+que ele seja renderizado.
+
+
+
