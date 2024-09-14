@@ -5,5 +5,20 @@ Nessa aula foi alterada a localização do compomenet primieero para de ntro da 
 eu não posso mais acessar ela diretamente eu tenho que digitar na url o nome da pasta onde o componete está para 
 que ele seja renderizado.
 
+Atenção:
+
+Apartir da versão 17 não é mais necessário importar ele dentro do componente quando for usar o jsx  por isso 
+que nos componentes que eu estou fazendo não existe a linha. 
+
+import React from 'React';
+
+
+
+
+
+
+
+
+
 
 
