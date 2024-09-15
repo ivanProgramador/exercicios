@@ -65,6 +65,13 @@ export default function Titulo(props){
              <h2>{props.secondario}</h2>
            </>
 }
+--------------------------------------------------------------
+
+Sobre css 
+
+Nas regras do next o css não pode ser importado diretamente no componente então nesse caso para que possa usar
+eu tenho que importar ele dentro do arquivo _app.tsx.
+
 
 
 
