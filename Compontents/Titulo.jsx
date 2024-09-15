@@ -1,7 +1,11 @@
-export default function Titulo(){
+export default function Titulo(props){
 
+ 
+  /*
+   o retorno abaixo mostra os valores que vieram dentro do objeto info
+  */
     return <>
-             <h1>Titulo</h1>
-             <h2>Subtitulo</h2>
+             <h1>{props.principal}</h1>
+             <h2>{props.secondario}</h2>
            </>
 }

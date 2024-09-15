@@ -24,6 +24,50 @@ forma direta pelo navegador, para que eu crie componentes de fato eles devem ser
 Se foram criados dentro da pasta pages vão funcionar normalmente porém a estrutura do projeto ficará confusa, os componentes
 devem ter a primenra letra do nome em caixa alta por convenção.
 
+Passagem de parametros para um componente 
+
+Essa é uma função que vai chamar o componente Titulo oa parametros passados nela são 
+
+1 - principal 
+2 - secondario 
+
+Embora sejam dois parametros qua eu mesmo declarei explicitamente eles vaõ cehgar lá como 
+atributos de um objeto  
+
+---------------------------------------------------------------------------
+export default function usandoTitulo(){
+
+    return <>
+             <Titulo
+               principal="Página de cadastro"
+               secondario="Incluir,Aterar e excluir coisas"
+             />
+           </>
+}
+---------------------------------------------------------------------------------
+
+Recebendo os parametros 
+
+Aqui no componente eles vão chegar dentro do objeto props 
+e apartir desse objeto eu posso mostrar o conteudo dos atributos 
+como eu estou fazendo abaixo 
+
+----------------------------------------------------------------------------------------------
+
+export default function Titulo(props){
+
+ 
+  /*
+   o retorno abaixo mostra os valores que vieram dentro do objeto props
+  */
+    return <>
+             <h1>{props.principal}</h1>
+             <h2>{props.secondario}</h2>
+           </>
+}
+
+
+
 
 
 
