@@ -75,7 +75,7 @@ Nesse caso ele está sendo usado de forma global.
 
 Para que o css seja aplicado somente para um componente especifico é necessário:
 1 - criar o arquivo css dessa forma <nome do arquivo>.module.css 
-2 - importar ele deentro do componete como se fosse um modulo 
+2 - importar ele deentro do componente como se fosse um modulo 
 
    import estilos from "./integracao2.module.css";  
 
@@ -86,7 +86,40 @@ Para que o css seja aplicado somente para um componente especifico é necessári
     <h1 className={estilos.branca2} >texto#03</h1>
 
 
-    mesmo sendo um id ele é trratado da mesma forma 
+    mesmo sendo um id ele é tratado da mesma forma 
+---------------------------------------------------------------------------------------------------
+
+Propriedades de componentes são somente para leitura,o objeto props que chega no componente só serve para 
+ser lido e não para ser editado. Uma forma de mexer nos valores pode ser na hora da exibição por exemplo 
+se eu passo um numero pra um componente pelo props.
+
+<componenteExemplo numero={1} />
+
+e lá no componente eu tento alterar o valor somando 1 a propriedade numero, vai dar erro   
+
+
+
+export default function componenteExemplo(props){
+
+    props.numero ++
+
+    return <div> { props.numero } </div>;
+}
+
+
+o unico jeito de alterar nessa situação seria no momento da exibição porém esse não é o jeito certo de fazer isso 
+porque o valor é exbido de forma diferente más a propridade não é alterada de fato, para fazer isso eu teria de manipular o estado 
+do componente 
+
+
+export default function componenteExemplo(props){
+
+    return <div> { props.numero + 1 } </div>;
+}
+
+manipulando estado 
+
+
 
 
 
