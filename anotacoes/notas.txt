@@ -108,7 +108,7 @@ export default function componenteExemplo(props){
 
 
 o unico jeito de alterar nessa situação seria no momento da exibição porém esse não é o jeito certo de fazer isso 
-porque o valor é exbido de forma diferente más a propridade não é alterada de fato, para fazer isso eu teria de manipular o estado 
+porque o valor é exibido de forma diferente más a propridade não é alterada de fato, para fazer isso eu teria de manipular o estado 
 do componente 
 
 
