@@ -117,7 +117,94 @@ export default function componenteExemplo(props){
     return <div> { props.numero + 1 } </div>;
 }
 
-manipulando estado 
+----------------------------------------------------------------------------------------
+Existem componentes que são compostos por outros 
+no meu caso eu eu usei uma lista que para ser exibida precisa de 3 componentes
+existe uma forma mais simples de fazer isso mas eu fiz com fins de aprendizado 
+
+1 - componenteComFilho.jsx (é basicamente um compnete que só mostra uma div vazia que vai receber o componete Lista eo componente item )
+
+export default function componenteComFilhos(){
+    return(
+        <div>
+        </div>
+    )
+}
+
+2 - componente Lista.jsx (Esse compomenet é uma lista <ul> vazia que será composta pelo compoente Item ) 
+
+export default function Lista(props){
+
+ 
+     return(
+        <ul>
+        
+        </ul>
+     )
+}
+
+3 - componente item (Esse compomente retorna um elemento <li> vázio que vai compor a lista)
+
+
+export default function Item(props){
+    return(
+    <li>{props.conteudo}</li>
+   )
+}
+
+------------------------------------------------------------------------------------------------------
+Agora esse eo componente completo 
+
+import Lista from "../../Components/Lista";
+import Item from "../../Components/Item";
+
+/*
+Esse componente usa dois outros componentes para compor uma lista   
+
+*/
+
+export default function componenteComFilhos(){
+    return(
+        <div>
+            <Lista>
+                <Item conteudo="Item #1" ></Item>
+                <Item conteudo="Item #2" ></Item>
+                <Item conteudo="Item #3" ></Item>
+                <Item conteudo="Item #4" ></Item>
+            </Lista>
+        </div>
+    )
+}
+
+----------------------------------------------------------------------------------
+No caso do componete lista elel não mostra um dados que ele recebe no porps e sim um componete inteiro 
+se fosse so um dado bastava pegar uma porpriedade do props e mostrar, porém quando um componente precisa
+mostrar outro, esse componete se torna um filho.
+
+No caso o componente paui seria a Lista eo compoenet filho seria o item que pertence a ela então para que o item 
+apareça eu uso o objeto props porém eu informo que literlamente ele deve mostrar o filho dentro da ul assim todos 
+os IUtens gerados vão se tornar um item da lista  
+
+export default function Lista(props){
+
+     return(
+        <ul>
+          {props.children}
+        </ul>
+     )
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
