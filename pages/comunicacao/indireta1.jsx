@@ -1,0 +1,11 @@
+import Pai from "../../Components/indireta1/Pai";
+
+
+
+export default function indireta1(){
+    return(
+        <div>
+            <Pai></Pai>
+        </div>
+    )
+}
