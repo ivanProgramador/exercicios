@@ -3,7 +3,7 @@ import Filho from "./Filho";
 
 /*
  A comunicação indireta entre os componentes
- acontece apartir de funções nesse exemplo 
+ acontece apartir de funções, nesse exemplo 
  eu vou passar uma função do componente pai 
  para o componente filho poder se comunicar com ele    
  
@@ -11,8 +11,8 @@ import Filho from "./Filho";
 
 export default function Pai(){
  /*
-  Nesse caso essa funcção vai receber 2 parametros, não existe um limite de parametros 
-  sou eu quam esta escolhendo 2 cada parametro vai ser uma frase qua o componete filho vai 
+  Nesse caso essa função vai receber 2 parametros, não existe um limite de parametros 
+  eu estou escolhendo 2 parametros e cada parametro vai ser uma frase qua o componete filho vai 
   mandar para o componente pai. 
  */
     function falarComigo(parametro1, parametro2){
