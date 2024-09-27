@@ -1,7 +1,7 @@
  /*
  Essa função vai gerar 6 numeros aleatórios
  
- Primeiro ela recebe 2 parametros 
+ Primeiro ela recebe 2 parâmetros 
  1 - a variável qtde que seria a quantidade de numeros que devem ser gerados 
  2 - um array vazio para aguadar os numeros depois que ela gerar 
  */
@@ -10,7 +10,7 @@
 
  function mega(qtde = 6, numeros =[]){
 
-    //testendo se a quantidade de numeros é menor que 60
+    //testando se a quantidade de numeros é menor que 60
 
     if(qtde < 6 && qtde > 60){
         throw "Quantidade invalida !"
@@ -28,7 +28,7 @@
     const numeroAleatorio = parseInt(Math.random() * 60) + 1
     
     //testando se alguns dos numeros aletotórios se repete 
-    //caso se repitam ele so reotna o paramento enviado 
+    //caso se repitam ele só retorna o paramento enviado 
 
     if(!numeros.includes(numeroAleatorio)){
          
