@@ -8,27 +8,34 @@
  
 
 
- function mega(qtde = 6, numeros =[]){
+  export function mega(quantidade = 6, numeros =[]){
 
-    //testendo se a quantidade de numeros é menor que 60
+    let qtde = +quantidade
+
+    //testando se a quantidade de numeros é menor que 60
 
     if(qtde < 6 && qtde > 60){
-        throw "Quantidade invalida !"
+        throw "Quantidade invalida !";
     }
     
     //testando se a quantidade de indices no array de numeros e igual a quantidade solicitada 
-    //se for 
+
+
     if(numeros.length === qtde){
 
-        return numeros.sort()
+        return numeros.sort( (n1 , n2 ) => n1 - n2 )
     }
+
+
+
+
     
     //gerando um numero aleatório e multiplicando ele por 60 e somando mais 1
 
-    const numeroAleatorio = parseInt(Math.random() * 60) + 1
+    const numeroAleatorio = parseInt(Math.random() * 60) + 1;
     
-    //testando se alguns dos numeros aletotórios se repete 
-    //caso se repitam ele so reotna o paramento enviado 
+    //testando se alguns dos numeros aleatórios se repete 
+    //caso se repitam ele só retorna o parámento enviado e executa novamente 
 
     if(!numeros.includes(numeroAleatorio)){
          
@@ -46,5 +53,3 @@
 
 }
 
-// solicitando 15 numeros aleatórios o para o sorteio 
-console.log(mega(15))
