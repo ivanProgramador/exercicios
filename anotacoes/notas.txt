@@ -203,6 +203,18 @@ import padrao from "./local_do_arquivo";
 porém quando um função não é exportada por padrão ela deve ser acessada dessa forma 
 
 import {padrao} from "./local_do_arquivo";
+------------------------------------------------------------------------------
+configurando um projeto para usar typescrypt
+
+1 - crie um arquivo na araiz do porjeto chamado tsconfig.json 
+2 - quando o porjeto for executado o node vai detectar esse arquivo e vai pedir para 
+    que voce instale as dependencias necessarias para usar o typescrypt.
+3 - depois de instalar as dependencias ele vai preencher as configurações de forma automática
+    assim é possivel usar arquivos .tsx 
+
+
+
+
 
 
 
