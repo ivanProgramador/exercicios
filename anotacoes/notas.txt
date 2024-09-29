@@ -181,9 +181,9 @@ No caso do componete lista elel não mostra um dados que ele recebe no porps e s
 se fosse so um dado bastava pegar uma porpriedade do props e mostrar, porém quando um componente precisa
 mostrar outro, esse componete se torna um filho.
 
-No caso o componente paui seria a Lista eo compoenet filho seria o item que pertence a ela então para que o item 
-apareça eu uso o objeto props porém eu informo que literlamente ele deve mostrar o filho dentro da ul assim todos 
-os IUtens gerados vão se tornar um item da lista  
+No caso o componente pai seria a Lista e o componente filho seria o item que pertence a ela então para que o item 
+apareça eu uso o objeto props porém eu informo que literalmente ele deve mostrar o filho dentro da ul assim todos 
+os Itens gerados vão se tornar um item da lista.  
 
 export default function Lista(props){
 
@@ -193,6 +193,20 @@ export default function Lista(props){
         </ul>
      )
 }
+---------------------------------------------------------------------------
+Padrões de exportação ECMA 
+
+quando uma função é expotada por padrão dentro de um arquivo eu posso importar ela dessa forma 
+
+import padrao from "./local_do_arquivo";
+
+porém quando um função não é exportada por padrão ela deve ser acessada dessa forma 
+
+import {padrao} from "./local_do_arquivo";
+
+
+
+
 
 
 

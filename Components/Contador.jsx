@@ -8,9 +8,9 @@ export default class Contador extends Component{
     }
     
     //quando se referir a qualquer propriedade ou metodo sempre usar o "this." antes
-    //para que aclasse saiba que você está falando do objeto atual  
+    //para que a classe saiba que você está falando do objeto atual  
     // se essa função não for uma arrow function
-    // ou não estiver sendo chamado por uma arrow function no onClick
+    // ou não estiver sendo chamada por uma arrow function no onClick
     // ele vai dizer que não consegue achar o state  
 
     inc = () => {
