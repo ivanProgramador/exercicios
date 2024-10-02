@@ -212,6 +212,10 @@ configurando um projeto para usar typescrypt
 3 - depois de instalar as dependencias ele vai preencher as configurações de forma automática
     assim é possivel usar arquivos .tsx 
 
+--------------------------------------------------------------------------------
+Api  
+O Next possui uma api interna que pode ser acessada pelos componentes sem o uso do cors  
+
 
 
 
