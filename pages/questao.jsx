@@ -2,37 +2,37 @@ import { useState } from "react"
 import { useEffect } from "react"
 
 /*
-Nesse compneete eu eestou consultando uma api
+Nesse componente eu estou consultando uma api
 para que eu consiga mostrar os dados vindos dela em 
-um componente esses dados precisam ser tratados.
+um componente. Esses dados precisam ser tratados.
 
-antes de fazer uma reuisição primeiro euu preciso definir onde eu vou 
+Antes de fazer uma requisição primeiro eu preciso definir onde eu vou 
 colocar esses dados quando eles chegarem para que possam ser exbibidos 
-no meu componente para isso eu uso o useState() que recebe um array de 
-2 posições, na primeira posição eu informeo avarivel que receberá os 
-valores e na segunda eu informo o nomeda faunção que será usada para 
+no meu componente para isso eu uso o useState(). Que recebe um array de 
+2 posições, na primeira posição eu informo a variável que receberá os 
+valores e na segunda eu informo o nome da função que será usada para 
 altera-la.
 
  const [questao, setQuestao] = useState(null)
 
-Agora eu preciso de fato pegar os dados no caso eu ciono a função useEffect()
+Agora eu preciso de fato pegar os dados no caso eu aciono a função useEffect()
 essa função recebe 2 parâmetros 
 
 1 - e a função que vai de fato executar a requisição e tratar a resposta
-2 - é um array de dependencias/ como não tem então eu deixei vazio(mas tem que ter esse array)  
+2 - é um array de dependencias/ como não tem então eu deixei vázio (mas tem que ter esse array)  
 
 a função que vai requisitar usa 3 processos sincronos para tratar os dados 
 
 1 - fetch -> essa função requisita os dados da url 
 2 - então converte para json - > then(resp => resp.json()) 
-3 - então aciona a função que latera o estado passando o json como parametro -> then(setQuestao) 
+3 - então aciona a função que altera o estado passando o json como parâmetro -> then(setQuestao) 
 
 agora o estado do componente recebe um json com os dados 
 
 
 */
 
-export default function questao (){
+export default function questao(){
 
     
     const [questao, setQuestao] = useState(null)
