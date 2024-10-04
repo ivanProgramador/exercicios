@@ -1,20 +1,32 @@
+
+
 const usuarios = [];
 
 export default function form(req,res){
 
-    if(req.method == "POST"){
+    if(req.method === "POST"){
 
-        post()
+        post(req,res)
 
+    }else if(req.method === "GET"){
+
+        get(req,res)
+         
     }else{
 
-        res.status(200).json(usuarios)
-        
+         res.status(405).send()
     }
 }
 
 function post(req,res){
+
     const usuario = JSON.parse(req.body)
     usuarios.push(usuario)
-    res.sendStatus(200).send()
+    res.status(200).send()
+
+}
+
+
+function get(req,res){
+    res.status(200).json(usuarios)
 }

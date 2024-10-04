@@ -23,7 +23,7 @@ export default function form(){
     function renderizarUsuarios(){
 
         return usuarios.map((usuario,i) =>{
-            return <li key={i} > {usuario.nome} tem {usuario.idade} </li>
+            return <li key={i} > {usuario.nome} tem {usuario.idade} anos </li>
         })
     }
 
