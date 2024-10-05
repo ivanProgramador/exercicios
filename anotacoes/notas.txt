@@ -215,6 +215,16 @@ configurando um projeto para usar typescrypt
 --------------------------------------------------------------------------------
 Api  
 O Next possui uma api interna que pode ser acessada pelos componentes sem o uso do cors  
+---------------------------------------------------------------------------
+Antes de fazer o deploy de uma apalicação e necessário seguir algumas regras básicas do compilador 
+para evitar problemas
+
+1 - todos os componententes declarados dentro do aplicativo devem iniciar com a letra maiuscula
+2 - não exporte por padrão funções anônimas ou se realmente for necessário exportar faça a atribuição dela a uma constante 
+3 - quando utilizar um componente LINK coloque o atributo passHref nele ou coloque uma tag <a></a> em volta do elemento ou texto que está sendo retornado pelo componente 
+
+Essas foram as advertencias que apareceram para mim até o momento 
+
 
 
 
