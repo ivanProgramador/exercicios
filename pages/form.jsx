@@ -6,6 +6,7 @@ export default function form(){
     const [idade,setIdade] = useState(0);
     const [usuarios,setUsuarios] = useState([]);
 
+    //essa função faz uma requisição para gravar dados na api 
     async function salvarUsuario(){
 
       await  fetch('api/form',{
@@ -13,12 +14,19 @@ export default function form(){
             body: JSON.stringify({nome,idade})
         })
 
+        
+    setNome("")
+    setIdade(0)
+
       const resp = await fetch('/api/form')
       const usuarios = await resp.json()
       setUsuarios(usuarios)
 
       
     }
+
+
+   //essa função faz uma reuisição para consultar os dados da api e redenrizar eles no componente
 
     function renderizarUsuarios(){
 
